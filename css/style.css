@@ -13,7 +13,7 @@
     --secondary-blue:#1a9af7;
     --soft-blue:#e7f5ff;
     --waerm-black:#201e1c;
-    --balck:#282623;
+    --black:#282623;
     --grey:#BABABA;
     --off-white:#faf8f7;
     --just-white:#fff;
@@ -32,4 +32,75 @@ html{
 /*
 font-family: 'Inter', sans-serif;
 */
+
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    min-width: 300px;
+    height: 334px;
+    text-align: center;
+    background:linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+
+header img {
+    width: 150px;
+    height: 24px;
+    margin-top: 60px;
+    align-self: center;
+}
+.header--title-containter{
+    width: 90vw;
+    min-width: 280px;
+    max-width: 900px;
+    height:218px;
+    margin-top: 50px;
+    text-align: center;
+    align-self: center;
+}
+.header--title-containter h1{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 26px;
+    color: var(--just-white);
+}
+
+.header--title-containter p{
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 18px;
+    color: var(--soft-orange);
+}
+.header--title-containter .header--button {
+    position: absolute;
+    left: calc(50% - 114.5px );/*Aca lo que hacemos es centrarlo verticalmente entonces lo corremos al 50% del contenedor pero le restamos la mitad de su tamaño para poder lograrlo*/
+    top: calc(100% - 24px);/* Esto corre el boton al 100% del fondo pero le resta la mitad de su altura total porque queremos que quede a la mitad del fin del contenedor */
+    display: block;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--off-white);
+    box-shadow: 0 px 4px 8px var(--black);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.header--button span {
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 1rem;
+    background: url('/css/assets/icons/down-arrow.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+/*-----------Terminando header-------*/
 
