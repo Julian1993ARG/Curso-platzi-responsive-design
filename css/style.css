@@ -1,7 +1,35 @@
+/*
+1. Pocisionamiento
+2. Modelo caja
+3. Tipografia
+4. Visuales
+5. Otros
+*/
+
+:root{
+    /*Colores*/
+    --bitcoin-orange:#f7931a;
+    --soft-orange:#ffe9d5;
+    --secondary-blue:#1a9af7;
+    --soft-blue:#e7f5ff;
+    --waerm-black:#201e1c;
+    --balck:#282623;
+    --grey:#BABABA;
+    --off-white:#faf8f7;
+    --just-white:#fff;
+}
+
 *{
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 html{
     font-size: 62.5%;
+    font-family:'DM Sans', sans-serif; 
 }
+
+/*
+font-family: 'Inter', sans-serif;
+*/
+
