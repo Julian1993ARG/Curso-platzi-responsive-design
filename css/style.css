@@ -32,7 +32,9 @@ html{
 /*
 font-family: 'Inter', sans-serif;
 */
-
+body{
+    background-color: #E5E5E5;
+}
 header{
     position: relative;
     display: flex;
@@ -154,7 +156,44 @@ main{
 }
 
 /*--------haciendo lista de precios de las criptomonedas----------*/
+#currency-table--title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--bitcoin-orange);
+    font-weight: 700;
+}
 
 /*-----------intentando con Grid----------*/
+.currency-table--container--grid{
+    width: 60vw;
+    max-width: 200px;
+    margin: 0 auto;
+    display: grid;
+    border-radius: 10px;
+    grid-template-columns: repeat(2,minmax(10px,101px));
+    margin-bottom: 15px;
+    font-family:'Inter', sans-serif; 
+    color: #B5B0AC;
+    background-color: #fff;
+}
+
+.currency-table--container--grid .name__money, .price__money{
+    border: 1px #E5E5E5 solid;
+}
+
+.name__money h4{
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 5px;
+    text-align: center;
+}
+
+.price__money h5{
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 5px;
+}
+
 
 /*---------haciendo segun el curso con las tablas-------------*/
