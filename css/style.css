@@ -348,3 +348,6 @@ main{
     display: grid;
     grid-template-columns: repeat(2,minmax(100px,115px));
 }
+
+/* comenzado la seccion de las tarjetas */
+
