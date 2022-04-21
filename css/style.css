@@ -156,20 +156,35 @@ main{
 }
 
 /*--------haciendo lista de precios de las criptomonedas----------*/
-#currency-table--title {
+
+/*-----------intentando con Grid----------*/
+/* #currency-table--title {
     text-align: center;
     font-size: 1.8rem;
     color: var(--bitcoin-orange);
     font-weight: 700;
 }
 
-/*-----------intentando con Grid----------*/
-.currency-table--container--grid{
+.currency-table--data{
+    background-color: var(--soft-orange);
+    width: 170px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+
+}
+.currency-table--data p {
+    font-size: 1.2rem;
+    line-height: 1.936rem;
+    text-align: center;
+    color: var(--waerm-black);
+    padding: 5px;
+} */
+/* .currency-table--container--grid{
     width: 60vw;
     max-width: 200px;
     margin: 0 auto;
-    display: grid;
-    align-items: center;
+    display: grid; 
     border-radius: 10px;
     grid-template-columns: repeat(2,minmax(10px,101px));
     margin-bottom: 15px;
@@ -181,14 +196,19 @@ main{
 .currency-table--container--grid .name__money, .price__money{
     border: 1px #E5E5E5 solid;
 }
-
+.name__money{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
 .name__money h4{
     font-size: 1.6rem;
     font-weight: 500;
-    padding: 5px;
-    text-align: center;
 }
 .price__money{
+    width: auto;
+    height: auto;
+    padding: 5px;
     display: flex;
     align-items: center;
     justify-content:space-around;
@@ -204,10 +224,107 @@ main{
     display: block;
     width: 15px;
     height: 10px;
-    margin: 0px;
     background-image: url(/css/assets/icons/trending-up.svg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+}
+.currency-table--container--grid .price__money:nth-child(6) span{
+    background-image: url(/css/assets/icons/trending-down.svg); 
+}*/
+/*---------haciendo segun el curso con las tablas-------------*/
+.main-currency-table{
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: 0 auto;
+    font-family: "Inter","sans-serif";
+}
+.main-currency-table #currency-table--title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    color: var(--bitcoin-orange);
 }
 
-/*---------haciendo segun el curso con las tablas-------------*/
+.currency-table--container{
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.currency-table--container table{
+    width: 100%;
+    height: 100%;
+}
+
+.currency-table--container td{
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--grey);
+    background-color: var(--just-white);
+}
+
+.currency-table--container .table__top-left{
+    border-radius: 15px 0 0 0;
+}
+
+.currency-table--container .table__top-right{
+    border-radius: 0 15px 0 0;
+}
+
+.currency-table--container .table__bottom-left{
+    border-radius: 0 0 0 15px;
+}
+.currency-table--container .table__bottom-right{
+    border-radius: 0 0 15px 0;
+}
+
+.currency-table--container .table__right{
+    font-size: 1.4rem;
+    font-weight:normal ;
+    line-height: 1.7rem;
+    color: #757575;
+}
+.currency-table--container .down{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url("/css/assets/icons/trending-down.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.currency-table--container #up{
+    background-image: url(/css/assets/icons/trending-up.svg);
+}
+
+.space{
+    width: 100%;
+    height: 30px;
+}
+.currency-table--data{
+    display: block;
+    margin-top: 10px;
+    background-color: var(--soft-orange);
+    width: 190px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+
+}
+.currency-table--data p {
+    font-size: 1.2rem;
+    line-height: 1.936rem;
+    text-align: center;
+    color: var(--waerm-black);
+    padding: 5px;
+}
