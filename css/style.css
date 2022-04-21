@@ -328,3 +328,23 @@ main{
     color: var(--waerm-black);
     padding: 5px;
 }
+
+/* --------haciendo la segunda tabla con grid ----- */
+
+.main-table-container--grid h2 {
+    color: var(--secondary-blue);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.currency-table-data--grid{
+    background-color: #E7F5FF;
+}
+
+.main-table-container--grid{
+    width: 235px;
+    height: 360px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,minmax(100px,115px));
+}
