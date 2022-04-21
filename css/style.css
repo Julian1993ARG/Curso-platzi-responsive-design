@@ -233,7 +233,7 @@ main{
     background-image: url(/css/assets/icons/trending-down.svg); 
 }*/
 /*---------haciendo segun el curso con las tablas-------------*/
-.main-currency-table{
+/* .main-currency-table{
     width: 70%;
     min-width: 235px;
     max-width: 500px;
@@ -327,27 +327,90 @@ main{
     text-align: center;
     color: var(--waerm-black);
     padding: 5px;
+} */
+
+/* Volviendo a intentar hacer la tabla con grid */
+
+.title__coins{
+    width: 100%;
+    height: 100%;
+    grid-column: 1/3;
+    background-color: var(--off-white);
+    margin: 0 auto;
 }
 
+.title__coins p {
+    color: var(--bitcoin-orange);
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    padding-top: 15px;
+}
+.main-table-container--grid .price__money {
+    display: flex;
+    font-weight: normal;
+    font-size: 1.4rem;
+    gap: 8px;
+}
+.main-table-container--grid .price__money span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url(/css/assets/icons/trending-down.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#up{
+    background-image: url(/css/assets/icons/trending-up.svg);
+}
+.currency-table--data{
+    height: 25px;
+    background-color: var(--soft-orange);
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
 /* --------haciendo la segunda tabla con grid ----- */
-
+.main-table-container--grid .title--grid{
+    grid-column: 1 / 3;
+    width: 100%;
+    height: 100%;
+    background-color:var(--off-white);
+    text-align: center;
+    padding-top: 15px;
+}
 .main-table-container--grid h2 {
     color: var(--secondary-blue);
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
-}
-
-.currency-table-data--grid{
-    background-color: #E7F5FF;
+    line-height: 2.5rem;
 }
 
 .main-table-container--grid{
     width: 235px;
-    height: 360px;
+    height: auto;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(2,minmax(100px,115px));
+    margin-bottom: 20px;
+    grid-template-columns: repeat(2,minmax(100px,117.5px));
+    grid-template-rows: repeat(5, 60px);
+    background-color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 15px 31px 6px rgba(247,147,26,1);
+    -moz-box-shadow: 4px 15px 31px 6px rgba(247,147,26,1);
+    box-shadow: 4px 15px 31px 6px rgba(247,147,26,1);
 }
-
+.main-table-container--grid .name__commission, .price--commission{
+    place-self: center;
+    font-family: "Inter","sans-serif";
+    font-size: 1.6rem;
+    color: #757575;
+}
+.currency-table-data--grid{ 
+    font-size: 1.4rem;
+    color: #757575;
+    background-color: var(--soft-blue);
+}
 /* comenzado la seccion de las tarjetas */
 
