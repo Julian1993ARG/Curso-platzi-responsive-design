@@ -6,3 +6,11 @@
     background-size: auto;
     margin: 0;
 }
+
+.grid__twocolumns{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 300px));
+    justify-content: center;
+    column-gap: 20px;
+}

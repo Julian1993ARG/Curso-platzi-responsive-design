@@ -419,7 +419,7 @@ main{
 .section__cars{
     background-color: #201E1C;
     min-width: 100vw;
-    height: 850px;
+    max-height: 850px;
 }
 
 .section__cars .icono__cards{
