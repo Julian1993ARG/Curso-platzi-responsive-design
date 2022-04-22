@@ -513,6 +513,7 @@ main{
 /* ------------------seccion ultima imagen---------- */
 
 .last_img{
+    position: relative;
     display: block;
     min-width: 300px;
     max-width: 320px;
@@ -525,9 +526,12 @@ main{
 }
 
 .last_img h2{
+    display: block;
+    width: 165px;
+    position: absolute;
+    left: calc(50% - 82.5px);
+    top: 110px;
     font-weight: bold;
     font-size: 2.4rem;
     color: var(--just-white);
-    text-align: center;
-    padding-top: 30%;
 }
