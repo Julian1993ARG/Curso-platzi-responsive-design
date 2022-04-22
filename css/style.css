@@ -523,3 +523,11 @@ main{
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.last_img h2{
+    font-weight: bold;
+    font-size: 2.4rem;
+    color: var(--just-white);
+    text-align: center;
+    padding-top: 30%;
+}

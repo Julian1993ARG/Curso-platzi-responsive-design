@@ -1,3 +1,8 @@
-.main-currency-table{
-    width: auto;
+.last_img{
+    background-image: url(/css/assets/img/bitcoinbaby2x.png);
+
+    max-width: 100%;
+    height: 700px;
+    background-size: auto;
+    margin: 0;
 }
