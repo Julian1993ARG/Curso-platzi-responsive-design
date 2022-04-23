@@ -40,7 +40,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100vw;
+    width:100%;
     min-width: 300px;
     height: 334px;
     text-align: center;
@@ -107,14 +107,14 @@ header img {
 /*-----------Terminando header-------*/
 
 main{
-    width: 100vw;
+    width:100%;
     height: auto;
     background-color: var(--off-white);
 
 }
 
 .main-exchange-container{
-    width: 100vw;
+    width:100%;
     height: auto;
     padding-top:80px;
     padding-bottom: 30px;
@@ -418,7 +418,7 @@ main{
 
 .section__cars{
     background-color: #201E1C;
-    min-width: 100vw;
+    min-width:100%;
     height: 850px;
 }
 
@@ -665,7 +665,7 @@ main{
 
 footer{
     display: block;
-    width: 100vw;
+    width:100%;
     height: 150px;
     background-color: var(--bitcoin-orange);
 }

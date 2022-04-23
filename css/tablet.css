@@ -27,5 +27,10 @@
 .plans-container--slider{
     max-width: 750px;
     margin: 0 auto;
+    overflow: unset;
+}
+
+footer .footer{
+    column-gap: 80px;
 }
 
