@@ -570,6 +570,7 @@ main{
     display: flex;
     gap: 8px;
     height: 316px;
+    padding: 0 10px;
     overflow-x: scroll;
     overscroll-behavior-x:contain;
     scroll-snap-type: x proximity;
@@ -706,3 +707,4 @@ footer .footer p{
     text-align: center;
     color: var(--soft-orange);
 }
+
