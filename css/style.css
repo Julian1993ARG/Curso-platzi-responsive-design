@@ -540,7 +540,7 @@ main{
 
 .main--plans-container{
     width: 100%;
-    height: 990px;
+    height: 1030px;
     background-color: var(--off-white);
 }
 
@@ -635,6 +635,7 @@ main{
     font-weight: bold;
     text-align: center;
     color: var(--waerm-black);
+    cursor: pointer;
 }
 
 .plans-container--card button span{
@@ -645,4 +646,51 @@ main{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/* ---------Comenzando el footer-------- */
+
+footer{
+    display: block;
+    width: 100vw;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+
+footer .footer{
+    width: 80%;
+    max-width: 400px;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+footer .footer .list-footer ul li{
+    list-style: none;
+    font-size: 1.4rem;
+    color: var(--just-white);
+    font-weight: 500;
+    padding: 2.5px;
+}
+
+footer .footer span{
+    display: block;
+    width: 41px;
+    height: 25px;
+    background-image: url(/css/assets/icons/batata.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer .footer p{
+    padding-top: 8px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--soft-orange);
 }
