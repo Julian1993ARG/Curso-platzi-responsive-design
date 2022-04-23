@@ -19,3 +19,7 @@
     width: auto;
     left: calc(50% - 101.85px);
 }
+
+.section__cars{
+    height:480px ;
+}

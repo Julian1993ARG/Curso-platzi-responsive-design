@@ -419,7 +419,7 @@ main{
 .section__cars{
     background-color: #201E1C;
     min-width: 100vw;
-    max-height: 850px;
+    height: 850px;
 }
 
 .section__cars .icono__cards{
@@ -540,7 +540,7 @@ main{
 
 .main--plans-container{
     width: 100%;
-    max-height: 800px;
+    height: 990px;
     background-color: var(--off-white);
 }
 
@@ -570,12 +570,14 @@ main{
 .plans-container--card {
     position: relative;
     display: block;
+    margin: 30px auto;
     width: 190px;
     height: 247px;
     background-color: var(--just-white);
     box-shadow: 0 4px 8px 0 rgba(89, 73, 30, 0.16);
     border-radius: 10px;
     text-align: center;
+    
 }
 
 .plans-container--card > p{
@@ -604,6 +606,7 @@ main{
 } */
 .plans-container--card div #price {
     font-size: 5.2rem;
+    padding-bottom: 20px;
 } 
 
 .plans-container--card div #price span{
@@ -612,3 +615,34 @@ main{
     color: var(--black);
 }
 
+.bonific{
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    color: #757575;
+    padding-bottom: 20px;
+}
+.plans-container--card button{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+    margin: 0 auto;
+    width: 150px;
+    height: 48px;
+    background-color: var(--soft-orange);
+    border: 2px solid var(--bitcoin-orange);
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--waerm-black);
+}
+
+.plans-container--card button span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(/css/assets/icons/orange-right-arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
