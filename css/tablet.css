@@ -23,3 +23,7 @@
 .section__cars{
     height:480px ;
 }
+.plans-container--slider{
+    max-width: 750px;
+    margin: 0 auto;
+}
