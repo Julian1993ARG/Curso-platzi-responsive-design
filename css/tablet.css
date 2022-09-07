@@ -11,7 +11,7 @@
     display: grid;
     grid-template-columns: repeat(2, minmax(250px, 300px));
     justify-content: center;
-    column-gap: 20px;
+    column-gap: 15px;
 }
 
 .last_img h2{
